@@ -1,0 +1,52 @@
+:root {
+    --red: rgb(226, 0, 0);
+    --white: #FFFFFF;
+    --black: #000000ef;
+}
+
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+}
+h4{
+    font-family: fantasy;
+}
+p{
+    font-family: fantasy;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+.tema-claro {
+    
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+.tema-escuro {
+    --bg: var(--black);
+    --fontColor: var(--red);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+.btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 25px;
+    width: 50px;
+    border-radius: 15%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    font-family: fantasy;
+}
