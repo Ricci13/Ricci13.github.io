@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Perlatto | Data Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #8A05BE; /* Tom roxo inspirado no Nubank */
+            --secondary-color: #111111;
+            --bg-color: #f4f5f7;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-muted: #666666;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            padding: 60px 0;
+            text-align: center;
+            border-bottom: 4px solid var(--primary-color);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .contact-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        .contact-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Sections */
+        section {
+            padding: 50px 0;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title i {
+            color: var(--primary-color);
+            margin-right: 10px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Experience specific */
+        .job-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .company-date {
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .card ul {
+            padding-left: 20px;
+            color: var(--text-main);
+        }
+
+        .card ul li {
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-tag {
+            background-color: #f0e6f7;
+            color: var(--primary-color);
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--secondary-color);
+            color: white;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .company-date {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Victor Perlatto</h1>
+            <h2>Analista de Dados Júnior | Entusiasta em Data Science</h2>
+            <div class="contact-links">
+                <a href="mailto:victorricci13@gmail.com" target="_blank"><i class="fas fa-envelope"></i> victorricci13@gmail.com</a>
+                <a href="https://linkedin.com/in/victor-perlatto" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#"><i class="fas fa-phone"></i> (31) 99889-6701</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section id="about">
+            <h2 class="section-title"><i class="fas fa-user-circle"></i> Sobre Mim</h2>
+            <div class="card">
+                <p>Sou um Analista de Dados apaixonado pela interseção entre dados, estratégia de negócios e o mercado financeiro. Atualmente focado em traduzir conjuntos de dados complexos em <em>insights</em> acionáveis para os segmentos de Varejo e Corporate (PF/PJ).</p>
+                <br>
+                <p>Recentemente, co-liderei a implementação de uma cultura orientada a dados no meu setor, o que contribuiu diretamente para um <span class="highlight">crescimento de 250% da carteira</span>. Com uma base sólida em SQL (Snowflake) e Power BI, estou expandindo ativamente meu conhecimento para Ciência de Dados, aplicando Python (Pandas, Prophet) na construção do meu primeiro modelo preditivo de Séries Temporais para gestão de liquidez.</p>
+                <br>
+                <p>Como estudante de Administração de Empresas (PUC Minas), acredito que as melhores soluções de dados são aquelas que resolvem problemas reais, desafiam o status quo e simplificam a tomada de decisão.</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2 class="section-title"><i class="fas fa-briefcase"></i> Experiência Profissional</h2>
+            
+            <div class="card">
+                <div class="job-title">Analista de Dados Júnior</div>
+                <div class="company-date">
+                    <span>Banco Mercantil | Superintendência Comercial PF/PJ</span>
+                    <span>Out 2024 – Presente</span>
+                </div>
+                <ul>
+                    <li>Co-liderança na implementação da cultura <em>data-driven</em> do setor, estruturando pipelines de dados e painéis estratégicos que apoiaram o <span class="highlight">crescimento de 250% da carteira</span> no último ano.</li>
+                    <li><strong>Análise Preditiva (Em Andamento):</strong> Desenvolvimento de um modelo de previsão de Séries Temporais utilizando <strong>Python (Prophet, Pandas)</strong> e <strong>Snowflake (SQL)</strong> para projetar fluxos de caixa e riscos de resgate de Renda Fixa (CDB, LF).</li>
+                    <li>Criação e otimização de queries SQL complexas (CTEs, Window Functions, QUALIFY) para o processamento de grandes volumes de dados no Snowflake.</li>
+                    <li>Desenvolvimento de dashboards interativos no Power BI para a Tesouraria e Diretoria Comercial.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="job-title">Estagiário de Análise de Dados</div>
+                <div class="company-date">
+                    <span>Banco Mercantil</span>
+                    <span>Out 2022 – Out 2024</span>
+                </div>
+                <ul>
+                    <li>Apoio na extração e análise de grandes volumes de dados de clientes, identificando tendências de comportamento e oportunidades de negócios.</li>
+                    <li>Auxílio na criação dos primeiros relatórios gerenciais em Power BI da área e automação de rotinas via SQL.</li>
+                    <li>Papel fundamental de apoio na transição dos fluxos de trabalho operacionais para uma cultura analítica.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title"><i class="fas fa-project-diagram"></i> Projetos em Destaque</h2>
+            
+            <div class="card">
+                <div class="job-title">Análise de Dados Financeiros da Bolsa</div>
+                <p style="margin-top: 10px; color: var(--text-muted); margin-bottom: 10px;"><em>Projeto Pessoal (Python)</em></p>
+                <ul>
+                    <li>Desenvolvimento de scripts introdutórios em Python utilizando Jupyter Notebooks e Pandas para extrair dados do mercado de ações via APIs.</li>
+                    <li>Condução de Análise Exploratória de Dados (EDA) básica com foco em entender tendências de ativos e praticar fluxos de manipulação de dados em Python.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title"><i class="fas fa-laptop-code"></i> Competências Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-tag">SQL & Snowflake</div>
+                <div class="skill-tag">Power BI & DAX</div>
+                <div class="skill-tag">Python (Pandas)</div>
+                <div class="skill-tag">Séries Temporais (Prophet)</div>
+                <div class="skill-tag">Mercado Financeiro (Renda Fixa)</div>
+                <div class="skill-tag">Visão Estratégica de Negócios</div>
+                <div class="skill-tag">Análise Exploratória (EDA)</div>
+                <div class="skill-tag">Excel Avançado</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Victor Perlatto. Construído com foco em Dados.</p>
+    </footer>
+
+</body>
+</html>
